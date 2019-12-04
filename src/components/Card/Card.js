@@ -1,16 +1,11 @@
 import React from 'react';
-import styles from './Column.scss';
-import Hero from '../Hero/Hero.js';
+import styles from './List.scss';
 import PropTypes from 'prop-types';
-import {pageContents, listData} from '../../data/dataStore';
+import {settings} from '../../data/dataStore';
 
-class Column extends React.Component {
-  state = {
-   cards: this.props.cards || [],
-  }
+class Card extends React.Component {
   static propTypes = {
     title: PropTypes.string.isRequired,
-    cards: PropTypes.array.isRequired,
   }
   addCard(title){
     this.setState(state => (
@@ -29,10 +24,12 @@ class Column extends React.Component {
   }
   render() {
     return (
-      <section className={styles.component}>
-        <h3 className={styles.title}>{this.props.title}</h3>
+      <section className = {styles.component}>
+      <div className={styles.cards}>
+        {this.state.columns.map(({key, ...columnProps}) => (
+        <Card key={key} {...cardsProps} />
+        ))}
+      </div>
+      <div className={styles.creator}
       </section>
-    )
   }
-}
-export default Column;

@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './Creator.scss';
 import Button from '../Button/Button';
 import PropTypes from 'prop-types';
+import {settings} from '../../data/dataStore';
 
 class Creator extends React.Component {
   static propTypes = {
