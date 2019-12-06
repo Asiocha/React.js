@@ -1,15 +1,13 @@
 import React from 'react';
 import styles from './Column.scss';
-import Hero from '../Hero/Hero.js';
 import PropTypes from 'prop-types';
-import {pageContents, listData} from '../../data/dataStore';
 import Icon from '../Icon/Icon.js';
 import Creator from '../Creator/Creator.js';
 import {settings} from '../../data/dataStore';
 
 class Column extends React.Component {
   state = {
-   cards: this.props.cards || [],
+    cards: this.props.cards || [],
   }
   static propTypes = {
     title: PropTypes.string.isRequired,
@@ -25,9 +23,9 @@ class Column extends React.Component {
             key: state.cards.length ? state.cards[state.cards.length-1].key+1 : 0,
             title,
             icon: 'list-alt',
-            cards: []
-          }
-        ]
+            cards: [],
+          },
+        ],
       }
     ));
   }
@@ -43,7 +41,7 @@ class Column extends React.Component {
           <Creator text={settings.cardCreatorText} action={title => this.addCard(title)}/>
         </div>
       </section>
-    )
+    );
   }
 }
 export default Column;
