@@ -10,7 +10,8 @@ import Creator from '../Creator/Creator.js';
 class List extends React.Component {
   state = {
     columns: this.props.columns || [],
-  }
+    cards: this.props.columns || [],
+  };
   static propTypes = {
     title: PropTypes.node.isRequired,
     imageId: PropTypes.string.isRequired,
