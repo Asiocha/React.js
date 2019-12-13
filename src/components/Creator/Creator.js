@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 class Creator extends React.Component {
   static propTypes = {
     text: PropTypes.string.isRequired,
-    action: PropTypes.func.isRequired,
+    action: PropTypes.func,
   }
 
   static defaultProps = {
@@ -49,6 +49,21 @@ class Creator extends React.Component {
           ...state.columns,
           {
             key: state.columns.length ? state.columns[state.columns.length-1].key+1 : 0,
+            title,
+            icon: 'list-alt',
+            cards: [],
+          },
+        ],
+      }
+    ));
+  }
+  addCard(title){
+    this.setState(state => (
+      {
+        cards: [
+          ...state.cards,
+          {
+            key: state.cards.length ? state.cards[state.cards.length-1].key+1 : 0,
             title,
             icon: 'list-alt',
             cards: [],
