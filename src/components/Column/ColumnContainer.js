@@ -12,4 +12,4 @@ const mapDispatchToProps = (dispatch, props) => ({
     title,
   })),
 });
-export default connect(mapStateToProps)(mapDispatchToProps)(Column);
+export default connect(mapStateToProps, mapDispatchToProps)(Column);
