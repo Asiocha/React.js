@@ -148,4 +148,16 @@ const initialStoreData = {
   cards: [...cards],
 };
 
+export const dataInfo = {
+  tittle: 'Info',
+  imageAdres: 'image',
+  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+};
+
+export const dataFAQ = {
+  tittle: 'FAQ',
+  imageAdres: 'image',
+  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+};
+
 export default initialStoreData;
