@@ -150,13 +150,13 @@ const initialStoreData = {
 
 export const dataInfo = {
   tittle: 'Info',
-  imageAdres: 'image',
+  imageAdres: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
 };
 
 export const dataFAQ = {
   tittle: 'FAQ',
-  imageAdres: 'image',
+  imageAdres: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
   description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
 };
 
