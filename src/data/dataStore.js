@@ -10,6 +10,9 @@ export const settings = {
     defaultText: 'Search...',
     icon: 'search',
   },
+  header: {
+    logoIcon: 'cat-space',
+  },
   defaultListDescription: '<p>I can do all the things!!!</p>',
   defaultColumnIcon: 'list-alt',
 };
